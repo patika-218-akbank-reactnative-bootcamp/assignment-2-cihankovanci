@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-import { Text, View, StyleSheet, FlatList, Pressable, TouchableOpacity } from 'react-native';
+import React from "react";
+import { Text, View, StyleSheet, FlatList, Pressable, TouchableOpacity, ScrollView } from 'react-native';
 
 import Chats from "../components/Chats";
 import chatList from "../chatList";
+import VirtualizedScrollView from "../components/VirtualizedScrollView";
+
 
 import Chat_data from "../Chat_data.json";
+import Header from "../components/Header";
+import HeaderTop from "../components/HeaderTop";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 
 
@@ -19,18 +24,27 @@ const ChatsListScreen = (props) => {
 
     return (
 
-        <View style={styles.container}>
-            <TouchableOpacity >
-                <View>
-                    <FlatList
-                        data={Chat_data}
-                        renderItem={renderChats}
-                        keyExtractor={item => item.id}
-                    />
-                </View>
-            </TouchableOpacity>
+        <SafeAreaView>
+            <HeaderTop />
+            <VirtualizedScrollView style={styles.container}>
 
-        </View>
+                <Header />
+                <TouchableOpacity >
+                    <View>
+
+                        <FlatList
+                            data={Chat_data}
+                            renderItem={renderChats}
+                            keyExtractor={item => item.id}
+
+
+
+                        />
+                    </View>
+                </TouchableOpacity>
+
+            </VirtualizedScrollView>
+        </SafeAreaView>
 
     );
 };

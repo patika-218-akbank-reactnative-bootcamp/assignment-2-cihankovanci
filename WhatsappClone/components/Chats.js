@@ -11,7 +11,7 @@ const Chats = ({ chat }) => {
         navigation.navigate('Messages', {
 
             chat_name: chat.name,
-
+            profile: chat.image,
 
             messages1: chat.message1,
             messages2: chat.message2,
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
         marginRight: +9,
         backgroundColor: 'white',
         alignContent: 'space-between',
+
     },
     Name_TextStyle: {
         color: 'black',

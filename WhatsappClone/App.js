@@ -1,9 +1,11 @@
 import React from "react";
+import { Button } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import ChatsListScreen from "./screens/ChatsListScreen";
 import MessagesScreen from "./screens/MessagesScreen";
+import Header from "./components/Header";
 
 import Chats from "./components/Chats";
 
@@ -18,7 +20,7 @@ export default function App() {
 
     <NavigationContainer>
       <Stack.Navigator >
-        <Stack.Screen name="ChatsList" component={ChatsListScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="ChatsList" component={ChatsListScreen} />
         <Stack.Screen name="Messages" component={MessagesScreen} options={({ route }) => ({ title: route.params.chat_name })} />
       </Stack.Navigator>
     </NavigationContainer>
