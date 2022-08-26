@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Message = ({ MessageProp, Username }) => {
     return (
         <View style={styles.container}>
-            {/*  <Text style={styles.italic}>{Username}</Text> */}
+            {/*  <Text style={styles.italic}>{Username}</Text>  Shows username on top of the messages box*/}
 
             <View style={styles.contentContainer}>
                 <Text style={styles.content}>{MessageProp}</Text>
