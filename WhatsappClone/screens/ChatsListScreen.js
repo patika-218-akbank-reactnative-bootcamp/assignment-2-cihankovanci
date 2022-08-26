@@ -53,6 +53,7 @@ export default ChatsListScreen;
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        marginBottom: 40,
     },
 });
