@@ -1,28 +1,33 @@
 import React, { useReducer } from "react";
-import { Text, View, StyleSheet, Image, MyAppHeaderText } from 'react-native';
+import { Text, View, StyleSheet, Image, MyAppHeaderText, ScrollView } from 'react-native';
+
+import Message from "../components/message";
+import MyMessage from "../components/myMessages.";
 
 
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function MessagesScreen({ route }) {
-    const { itemId, otherParam, chat_name, messages1, messages2, messages3, profile } = route.params;
+    const { itemId, otherParam, chat_name, messages1, messages2, messages3, messages4, messages5, messages6, messages7, messages8, messages9, profile } = route.params;
 
 
     return (
-        <View>
-            <Text>Messages screens </Text>
-            <Text>itemId: {JSON.stringify(itemId)}</Text>
 
-            <Text>otherParam: {JSON.stringify(otherParam)}</Text>
-            <Text>{chat_name}</Text>
-            <Text>{messages1}</Text>
-            <Text>{messages2}</Text>
-            <Text>{messages3}</Text>
-            <Image style={styles.profilePhoto} source={{ uri: profile }} />
 
-        </View>
+        <ScrollView>
+
+            <Message Message={messages1} Username={chat_name} />
+            <MyMessage Message={messages2} Username={chat_name} />
+            <Message Message={messages3} Username={chat_name} />
+            <MyMessage Message={messages4} Username={chat_name} />
+            <Message Message={messages5} Username={chat_name} />
+            <MyMessage Message={messages6} Username={chat_name} />
+            <Message Message={messages7} Username={chat_name} />
+            <MyMessage Message={messages8} Username={chat_name} />
+            <Message Message={messages9} Username={chat_name} />
+
+        </ScrollView>
+
     );
 };
 

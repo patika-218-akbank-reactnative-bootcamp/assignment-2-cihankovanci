@@ -9,13 +9,19 @@ const Chats = ({ chat }) => {
 
     function selectMessageHandler() {
         navigation.navigate('Messages', {
-            itemId: 86,
-            otherParam: 'anything you want here',
+
             chat_name: chat.name,
-            profile: chat.image,
+
+
             messages1: chat.message1,
             messages2: chat.message2,
             messages3: chat.message3,
+            messages4: chat.message4,
+            messages5: chat.message5,
+            messages6: chat.message6,
+            messages7: chat.message7,
+            messages8: chat.message8,
+            messages9: chat.message9,
 
         });
 
@@ -34,7 +40,7 @@ const Chats = ({ chat }) => {
 
                 <View style={styles.text_container}>
                     <Text style={styles.Name_TextStyle}>{chat.name}</Text>
-                    <Text numberOfLines={2} style={styles.Message_TextStyle}>{chat.message3}</Text>
+                    <Text numberOfLines={2} style={styles.Message_TextStyle}>{chat.message9}</Text>
                 </View>
                 <View style={styles.time_container}>
                     <Text>{chat.time}</Text>
