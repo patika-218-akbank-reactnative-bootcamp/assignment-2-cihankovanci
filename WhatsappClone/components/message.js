@@ -1,18 +1,13 @@
-import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-
-
-const Message = ({ Message, Username }) => {
-
+const Message = ({ MessageProp, Username }) => {
     return (
-
         <View style={styles.container}>
-
             {/*  <Text style={styles.italic}>{Username}</Text> */}
 
             <View style={styles.contentContainer}>
-                <Text style={styles.content}>{Message}</Text>
+                <Text style={styles.content}>{MessageProp}</Text>
                 <Text style={styles.italic}>11:22</Text>
             </View>
         </View>
@@ -24,13 +19,13 @@ export default Message;
 const styles = StyleSheet.create({
     container: {
         margin: 10,
-        marginRight: "30%",
+        marginRight: '30%',
         backgroundColor: '#fff',
         padding: 7,
         borderRadius: 10,
         minHeight: 60,
 
-        shadowColor: "#000",
+        shadowColor: '#000',
         shadowOffset: {
             width: 0,
             height: 3,
@@ -43,7 +38,6 @@ const styles = StyleSheet.create({
 
     italic: {
         fontStyle: 'italic',
-
     },
 
     contentContainer: {
@@ -51,13 +45,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         //  alignItems: 'flex-end'
-
     },
     content: {
-        fontWeight: "bold",
+        fontWeight: 'bold',
         fontSize: 15,
         flexWrap: 'wrap',
         flexShrink: 1,
-        color: 'black'
+        color: 'black',
     },
 });

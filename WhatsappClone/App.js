@@ -1,29 +1,28 @@
-import React from "react";
-import { Button } from "react-native";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
 
-import ChatsListScreen from "./screens/ChatsListScreen";
-import MessagesScreen from "./screens/MessagesScreen";
-import Header from "./components/Header";
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Chats from "./components/Chats";
-
+import ChatsListScreen from './screens/ChatsListScreen';
+import MessagesScreen from './screens/MessagesScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-
-
   return (
-
-
     <NavigationContainer>
-      <Stack.Navigator >
-        <Stack.Screen options={{ headerShown: false }} name="ChatsList" component={ChatsListScreen} />
-        <Stack.Screen name="Messages" component={MessagesScreen} options={({ route }) => ({ title: route.params.chat_name })} />
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="ChatsList"
+          component={ChatsListScreen}
+        />
+        <Stack.Screen
+          name="Messages"
+          component={MessagesScreen}
+          options={({route}) => ({title: route.params.chat_name})}
+        />
       </Stack.Navigator>
     </NavigationContainer>
-
   );
 }
