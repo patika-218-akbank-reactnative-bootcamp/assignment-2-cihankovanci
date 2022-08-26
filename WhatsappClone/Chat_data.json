@@ -2,56 +2,72 @@
     {
         "id": "0",
         "name": "Cihan Kovancı",
-        "message": "Dışarı geliyor musun?",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "1 min",
         "image": "https://avatars.githubusercontent.com/u/90427123?v=4"
     },
     {
         "id": "1",
         "name": "Mert Altındağ",
-        "message": "Spora kaçta gidelim?",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "8 min",
         "image": "https://picsum.photos/200/300"
     },
     {
         "id": "2",
         "name": "Elon Musk",
-        "message": "Metallica is number one",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "15 min",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
     },
     {
         "id": "3",
         "name": "Zuck",
-        "message": "Metallica is number one",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "30 min",
         "image": "https://yourwikis.com/wp-content/uploads/2020/01/mark-zuck-img.jpg"
     },
     {
         "id": "4",
         "name": "Ahmet Samurcu",
-        "message": "Dışarı geliyor musun?",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "1 min",
         "image": "https://picsum.photos/300/300"
     },
     {
         "id": "5",
         "name": "İzge Durmakoş",
-        "message": "Spora kaçta gidelim?",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "8 min",
         "image": "https://picsum.photos/301/301"
     },
     {
         "id": "6",
         "name": "Fatma",
-        "message": "Metallica is number one",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "15 min",
         "image": "https://picsum.photos/200/301"
     },
     {
         "id": "7",
         "name": "Yakup",
-        "message": "Metallica is number one",
+        "message1": "Spora kaçta gidelim?",
+        "message2": "Spora  gidelim?",
+        "message3": "Spora 7 de gidelim?",
         "time": "30 min",
         "image": "https://picsum.photos/200/200"
     },
